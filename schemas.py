@@ -154,3 +154,11 @@ class DeteleProfile(BaseModel):
     password: Optional[str]
     reason: str
     message: Optional[str]
+
+    # Send Contact Email
+
+class Contact(BaseModel):
+    full_name :str
+    email : str
+    subject:str
+    message : str

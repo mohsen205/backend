@@ -34,8 +34,6 @@ class User(Base):
         "PriavteDetail", back_populates="user", cascade="all, delete", passive_deletes=True, uselist=False)
     notification = relationship(
         "Alert", back_populates="user", cascade="all, delete", passive_deletes=True)
-    alert = relationship(
-        "Notification", back_populates="user", cascade="all, delete", passive_deletes=True)
 
 # # # Login with third partie provider
 

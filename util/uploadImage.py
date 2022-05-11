@@ -2,11 +2,13 @@ from fastapi import File, UploadFile
 from googleapiclient.http import MediaFileUpload
 from util.Google import Create_Service
 
-CLIENT_SECRET_FILE = 'client_secret_389578845827-cpb5ee4idmen9i4k33l9ppca6s865ki8.apps.googleusercontent.com.json'
-API_NAME = 'drive'
-API_VERSION = 'v3'
-SCOPES = ['https://www.googleapis.com/auth/drive']
-FOLDER_ID = '1Pdkd9-I7tnHof1ruBWcYbUw3iYeHq7HR'
+from config import settings
+
+CLIENT_SECRET_FILE = settings.client_secret_file
+API_NAME = settings.api_name
+API_VERSION = settings.api_version
+SCOPES = settings.scopes
+FOLDER_ID = settings.folder_id
 
 service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
 # upload image

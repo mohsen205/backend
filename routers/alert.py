@@ -14,8 +14,6 @@ router = APIRouter(
 )
 
 
-API_KEY_YAHOO = ''
-
 #  create alert
 
 
