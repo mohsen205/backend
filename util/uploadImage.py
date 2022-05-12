@@ -5,12 +5,14 @@ from util.Google import Create_Service
 from config import settings
 
 CLIENT_SECRET_FILE = settings.client_secret_file
+# CLIENT_SECRET_FILE = 'client_secret_389578845827-cpb5ee4idmen9i4k33l9ppca6s865ki8.apps.googleusercontent.com.json'
+
 API_NAME = settings.api_name
 API_VERSION = settings.api_version
 SCOPES = settings.scopes
 FOLDER_ID = settings.folder_id
 
-service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
+# service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
 # upload image
 
 
